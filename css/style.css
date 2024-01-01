@@ -1,0 +1,147 @@
+* {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main_section,
+#signUp_main_section,
+#home_section {
+  background-color: #24353f;
+}
+#logContainer,
+#signUp_Container {
+  padding: 3rem 0 3rem 0;
+  margin: 10px;
+  width: 55%;
+  background-color: #24353f;
+  box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+
+#homeContainer {
+  padding: 3rem 0 3rem 0;
+  margin-top: 15rem;
+  width: 55%;
+  background-color: #24353f;
+  box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+/* ! NavBar Style */
+.navBar {
+  padding: 0.5rem 13rem;
+
+  width: 100%;
+
+  background-color: #24353f;
+
+  box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+.nav-brand {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.logOut {
+  color: #939393;
+}
+
+.logOut:hover {
+  color: #939393;
+}
+
+/* ///////////////////////////////////////////////// */
+.home_title p {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #17a1b7;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  font-weight: 600;
+  color: #17a1b7;
+}
+
+.signUp_userName {
+  margin-bottom: 1rem;
+
+  width: 87%;
+}
+
+.email,
+.signUp_email {
+  margin-bottom: 1rem;
+
+  width: 87%;
+}
+input::placeholder {
+  font-size: 1.1rem;
+  color: #cbcbcb;
+}
+
+input {
+  background-color: #24353f;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  height: 2.3rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.password,
+.signUp_password {
+  margin-bottom: 1rem;
+  width: 87%;
+}
+
+.btn-login,
+.btn-signUp {
+  width: 87%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-login button,
+.btn-signUp button {
+  background-color: #24353f;
+  border: none;
+  outline: 2px solid #17a2b7c7 !important;
+
+  border-radius: 3px;
+  color: #17a1b7;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.btn-login button:hover,
+.btn-signUp button:hover {
+  background-color: #17a1b7;
+  color: #fff;
+}
+
+.btn-login button:active {
+  outline: 4px solid #17a2b7c7 !important;
+  background-color: #17a1b7 !important;
+  color: #fff !important;
+}
+
+.btn-signup p,
+.btn-signIn p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btn-signup p a,
+.btn-signIn p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-signup p a:hover,
+.btn-signIn p a:hover {
+  text-decoration: underline;
+}
