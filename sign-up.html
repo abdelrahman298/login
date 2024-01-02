@@ -28,7 +28,7 @@
 
         <div class="signUp_userName">
           <input
-            id="signUp_userName"
+            id="signUpUserName"
             type="email"
             class="w-100"
             placeholder="Enter your Name"
@@ -36,7 +36,7 @@
         </div>
         <div class="signUp_email">
           <input
-            id="signUp_email"
+            id="signUpEmail"
             type="email"
             class="w-100"
             placeholder="Enter your email"
@@ -44,19 +44,26 @@
         </div>
         <div class="signUp_password">
           <input
-            id="signUp_password"
+            id="signUpPassword"
             type="password"
             class="w-100"
             placeholder="Enter password"
           />
         </div>
-
+        <div id="errorContainer" class="d-none">
+          <p>All inputs is required / please check your email</p>
+        </div>
+        <div id="successContainer" class="d-none">
+          <p>Success</p>
+        </div>
         <div class="btn-signUp">
-          <button class="btn w-100" type="button">Sign Up</button>
+          <button id="signUpBtn" class="btn w-100" type="button">
+            Sign Up
+          </button>
         </div>
 
         <div class="btn-signIn">
-          <p>You have an account? <a href="#">Signin</a></p>
+          <p>You have an account? <a href="index.html">Sign in</a></p>
         </div>
       </div>
     </section>

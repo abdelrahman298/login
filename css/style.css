@@ -145,3 +145,15 @@ input {
 .btn-signIn p a:hover {
   text-decoration: underline;
 }
+
+/* ! SignUp Page */
+#errorContainer p {
+  font-size: 1.1rem;
+  color: rgb(255, 0, 0);
+}
+
+#successContainer p {
+  font-size: 1.1rem;
+  color: rgb(0, 148, 0);
+}
+/* //////////////////// */
