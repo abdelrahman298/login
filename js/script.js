@@ -40,8 +40,6 @@ function addUserData() {
   // clearInputs()
 }
 
-signUpBtn.addEventListener("click", addUserData);
-
 function signUpValidation(signUpUserData) {
   // ? user Name validation
   var nameRegex = /^[a-zA-Z\-]+$/;
@@ -59,3 +57,33 @@ function signUpValidation(signUpUserData) {
 }
 
 // ! Sign In Processing
+var signInButton = document.getElementById("signInButton");
+var signInEmail = document.getElementById("signInEmail");
+var signInPassword = document.getElementById("signInPassword");
+function checkSignIn() {
+  console.log(usersData);
+
+  for (var i = 0; i < usersData.length; i++) {
+    if (
+      usersData[i].email == signInEmail.value &&
+      usersData[i].password == signInPassword.value
+    ) {
+      window.location.href = "home.html";
+      document.querySelector(
+        ".home_title"
+      ).innerHTML = `Welcome ${usersData[i].name} `;
+    } else {
+      document.querySelector("#signInError").classList.remove("d-none");
+    }
+  }
+}
+
+//! Log out btn
+
+var logOutBtn = document.getElementById("logOutButton");
+
+function logOut() {
+  window.location.href = "index.html";
+}
+
+// logOutBtn.addEventListener("click", logOut);

@@ -28,7 +28,7 @@
 
         <div class="email">
           <input
-            id="email"
+            id="signInEmail"
             type="email"
             class="w-100"
             placeholder="Enter your email"
@@ -36,15 +36,24 @@
         </div>
         <div class="password">
           <input
-            id="password"
+            id="signInPassword"
             type="password"
             class="w-100"
             placeholder="Enter your password"
           />
         </div>
-
+        <div id="signInError" class="d-none">
+          <p>incorrect email or password</p>
+        </div>
         <div class="btn-login">
-          <button class="btn w-100" type="button">Login</button>
+          <button
+            id="signInButton"
+            onclick="checkSignIn()"
+            class="btn w-100"
+            type="button"
+          >
+            Login
+          </button>
         </div>
 
         <div class="btn-signup">
